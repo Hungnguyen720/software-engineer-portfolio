@@ -22,7 +22,7 @@ Two placeholders to replace before publishing:
 
 `railway.json` tells Railway how to build and run the site:
 
-- Build: `npm ci && npm run build` produces `dist/`.
+- Build: Nixpacks runs `npm ci`, then `npm run build` produces `dist/`.
 - Start: `npm start` serves `dist/` with [`serve`](https://github.com/vercel/serve) on Railway's `$PORT`, with SPA fallback.
 
 Setup, once:
