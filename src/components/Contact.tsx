@@ -4,7 +4,11 @@ export default function Contact() {
   const rows = [
     { href: `mailto:${profile.email}`, label: profile.email, kind: 'email' },
     { href: profile.github, label: profile.github.replace('https://', ''), kind: 'code' },
-    { href: profile.linkedin, label: 'LinkedIn', kind: 'profile' },
+    {
+      href: profile.linkedin,
+      label: profile.linkedin.replace('https://www.', '').replace(/\/$/, ''),
+      kind: 'profile',
+    },
   ];
   return (
     <section id="contact" className="contact">

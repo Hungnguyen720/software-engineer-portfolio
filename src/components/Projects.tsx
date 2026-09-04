@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="wrap">
         <div className="sec-head">
           <h2>Projects</h2>
-          <p>Things I have built or am building. Live ones link to the product, the rest link to code.</p>
+          <p>Things I have built or am building. Explore the live products, or ask me about private work.</p>
         </div>
         <div className="sheets">
           {projects.map((p) => <Card key={p.id} p={p} />)}

@@ -7,7 +7,7 @@ export const profile = {
     'I build the software behind live events, learning tools and small businesses: realtime scoring platforms, multiplayer rooms that survive a redeploy, and apps people open every day.',
   email: 'HungNguyen720@gmail.com',
   github: 'https://github.com/Hungnguyen720',
-  linkedin: 'https://www.linkedin.com/in/REPLACE-ME', // TODO: real LinkedIn URL
+  linkedin: 'https://www.linkedin.com/in/hungnguyen720/',
 };
 
 /** Facts shown beside the hero copy. */
@@ -60,21 +60,18 @@ export const projects: Project[] = [
     summary:
       'Multiplayer party game. Everyone picks a song, a 15-second hook plays in sync for the whole room, most thumbs-up wins. Rooms live in server memory and snapshot to disk so a deploy restores active games mid-round.',
     stack: ['Go 1.26', 'WebSockets', 'Vue 3', 'Vite', 'Tailwind', 'Railway'],
-    links: [
-      { label: 'Play', href: 'https://vibe-check-prod.up.railway.app' },
-      { label: 'Code', href: 'https://github.com/Hungnguyen720/vibe-check' },
-    ],
+    links: [{ label: 'Play', href: 'https://vibe-check-prod.up.railway.app' }],
   },
   {
     id: 'ats',
     category: 'Tooling',
     name: 'Is My Resume ATS Friendly?',
-    status: 'open',
-    statusLabel: 'Open source',
+    status: 'live',
+    statusLabel: 'Live',
     summary:
       'Shows the text an applicant tracking system actually extracts from a PDF, next to the resume you designed. Reconstructs both the naive and the column-aware reading order from glyph coordinates. Runs entirely in the browser, no upload.',
     stack: ['Astro', 'React 19', 'TypeScript', 'pdf.js', 'Tailwind 4', 'Vitest'],
-    links: [{ label: 'Code', href: 'https://github.com/Hungnguyen720/is-my-resume-ats-friendly' }],
+    links: [{ label: 'Visit site', href: 'https://ismyresumeatsfriendly.com/' }],
   },
   {
     id: 'trampoline-scorer',
@@ -85,7 +82,7 @@ export const projects: Project[] = [
     summary:
       'Upload a routine video, run MoveNet pose estimation frame by frame in the browser, overlay the skeleton, export pose data for training a scoring model. Phase one of automating the execution judge.',
     stack: ['Vue 3', 'TypeScript', 'TensorFlow.js', 'MoveNet', 'Canvas'],
-    links: [{ label: 'Code', href: 'https://github.com/Hungnguyen720' }],
+    links: [{ label: 'Ask me about it', href: '#contact' }],
   },
   {
     id: 'lingualoop',
@@ -96,7 +93,7 @@ export const projects: Project[] = [
     summary:
       'iOS app for conversational Spanish built on a daily loop: practice a song, read a short story, complete one verb walkthrough aloud. Content is authored in a Nuxt studio with a typed schema so every unit ships consistent.',
     stack: ['iOS', 'Nuxt 4', 'TypeScript', 'Content schema', 'Audio pipeline'],
-    links: [{ label: 'Code', href: 'https://github.com/Hungnguyen720/LinguaLoop' }],
+    links: [{ label: 'Ask me about it', href: '#contact' }],
   },
   {
     id: 'florist-ops',
@@ -107,7 +104,7 @@ export const projects: Project[] = [
     summary:
       'Operations software for independent wedding florists: events, deadlines across time zones, flower orders, freelance staff, transport, payables and per-event profit. Contract-first API with a typed frontend generated from it.',
     stack: ['Go 1.26', 'PostgreSQL 18', 'Next.js 16', 'React 19', 'MUI', 'OpenAPI'],
-    links: [{ label: 'Code', href: 'https://github.com/Hungnguyen720/florist-ops-next' }],
+    links: [{ label: 'Ask me about it', href: '#contact' }],
   },
   {
     id: 'pipeline',
@@ -124,12 +121,12 @@ export const projects: Project[] = [
     id: 'thai-alphabet',
     category: 'Learning',
     name: 'Thai Alphabet',
-    status: 'open',
-    statusLabel: 'Open source',
+    status: 'build',
+    statusLabel: 'Private',
     summary:
       'Flashcards for all 46 Thai consonants and the vowels, with 3D flip cards, romanization and native audio. Built to learn the script myself.',
     stack: ['Vite', 'Tailwind', 'Web Audio'],
-    links: [{ label: 'Code', href: 'https://github.com/Hungnguyen720' }],
+    links: [{ label: 'Ask me about it', href: '#contact' }],
   },
 ];
 
@@ -186,26 +183,31 @@ export interface Role {
   when: string;
   title: string;
   body: string;
-  placeholder?: boolean;
 }
 
 export const experience: Role[] = [
   {
-    when: 'Oct 2025 — present',
-    title: 'Software Engineer · Stanbridge University',
+    when: 'May 2020 — present',
+    title: 'Lead Engineer · Stanbridge University',
     body:
-      "Engineer on Edverum, the university's Laravel learning platform. Ship features through a tested PHPUnit pipeline, help maintain the engineering standards repo, and built the Pipeline plugin so agent-assisted work lands as reviewed pull requests, not surprises.",
+      'Promoted from Web Developer to Lead Engineer in October 2024. Lead six engineers building a Laravel and Vue learning platform used by thousands of students and faculty. Shipped an AI course generator used to create 1,000+ courses and an agentic delivery pipeline that increased throughput to 30–40 tickets per day.',
   },
   {
-    when: '2023 — present',
-    title: 'Co-builder · Scorsync',
+    when: 'Dec 2024 — present',
+    title: 'Senior / Lead Engineer · ScorSync',
     body:
-      'Second-largest contributor to a live scoring platform used at trampoline & tumbling competitions. Laravel, MySQL, Tailwind, realtime judge panels.',
+      'Architected a Laravel, Livewire and Filament scheduling workspace for gymnastics meets with up to 1,000 athletes. Replaced error-prone spreadsheets and reduced meet preparation from two months to days, while adding imports, conflict detection, audit history, locking and exports.',
   },
   {
-    when: 'Earlier',
-    title: '[Add previous role or education here]',
-    body: 'Placeholder. Replace with degree, bootcamp, or prior job, with dates.',
-    placeholder: true,
+    when: 'Jan 2020 — May 2020',
+    title: 'Web Developer · Western Growers',
+    body:
+      'Maintained and modernized legacy PHP applications, improving performance, resolving critical production issues and restructuring code for long-term maintainability.',
+  },
+  {
+    when: 'Jul 2016 — Dec 2019',
+    title: 'Web Developer · Beyond Polish',
+    body:
+      'Built PHP, JavaScript and MySQL tools for e-commerce analytics, reporting and warehouse automation, increasing operational throughput by more than 500%.',
   },
 ];

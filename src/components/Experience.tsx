@@ -12,8 +12,8 @@ export default function Experience() {
           {experience.map((r) => (
             <li key={r.title}>
               <span className="when">{r.when}</span>
-              <h3 className={r.placeholder ? 'todo' : undefined}>{r.title}</h3>
-              <p className={r.placeholder ? 'todo' : undefined}>{r.body}</p>
+              <h3>{r.title}</h3>
+              <p>{r.body}</p>
             </li>
           ))}
         </ol>

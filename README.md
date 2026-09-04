@@ -13,10 +13,7 @@ npm run preview   # serve dist/ locally
 
 All copy lives in `src/data.ts`: profile, hero facts, projects, skill groups, experience, contact links. Components in `src/components/` only render that data.
 
-Two placeholders to replace before publishing:
-
-1. `profile.linkedin` in `src/data.ts`.
-2. The `placeholder: true` entry at the end of `experience` in `src/data.ts`.
+Profile links and work experience are maintained in `src/data.ts`.
 
 ## Deploy to Railway
 

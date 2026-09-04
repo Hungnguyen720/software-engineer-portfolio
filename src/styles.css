@@ -128,7 +128,6 @@ section { padding: 5.5rem 0; }
 .history .when { font-family: var(--mono); font-size: 12.5px; color: var(--amber); letter-spacing: .08em; text-transform: uppercase; }
 .history h3 { font-size: 1.9rem; font-weight: 700; margin: .25rem 0 .4rem; }
 .history p { margin: 0; color: #C9CED8; max-width: 62ch; }
-.history .todo { color: var(--steel); font-style: italic; }
 
 /* ---------- contact ---------- */
 .contact { background: var(--mat); color: var(--chalk); }
