@@ -8,6 +8,7 @@ export const profile = {
   email: 'HungNguyen720@gmail.com',
   github: 'https://github.com/Hungnguyen720',
   linkedin: 'https://www.linkedin.com/in/hungnguyen720/',
+  resume: './Hung_Nguyen_Resume.pdf',
 };
 
 /** Facts shown beside the hero copy. */

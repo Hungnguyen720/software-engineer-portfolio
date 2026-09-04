@@ -12,6 +12,7 @@ export default function Hero() {
           <div className="hero-actions">
             <a className="btn solid" href="#projects">See projects</a>
             <a className="btn ghost" href={`mailto:${profile.email}`}>Email me</a>
+            <a className="btn ghost" href={profile.resume} download="Hung_Nguyen_Resume.pdf">Download resume</a>
           </div>
         </div>
         <dl className="facts">

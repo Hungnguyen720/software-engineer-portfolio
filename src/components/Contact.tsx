@@ -2,6 +2,7 @@ import { profile } from '../data';
 
 export default function Contact() {
   const rows = [
+    { href: profile.resume, label: 'Download resume', kind: 'pdf', download: true },
     { href: `mailto:${profile.email}`, label: profile.email, kind: 'email' },
     { href: profile.github, label: profile.github.replace('https://', ''), kind: 'code' },
     {
@@ -24,7 +25,11 @@ export default function Contact() {
         <ul>
           {rows.map((r) => (
             <li key={r.kind}>
-              <a href={r.href} {...(r.href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {})}>
+              <a
+                href={r.href}
+                {...(r.href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {})}
+                {...(r.download ? { download: 'Hung_Nguyen_Resume.pdf' } : {})}
+              >
                 {r.label}
               </a>
               <small>{r.kind}</small>
